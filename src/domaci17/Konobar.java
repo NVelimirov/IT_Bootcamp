@@ -7,5 +7,5 @@ public class Konobar extends Zaposleni{
         super(ime, pozicija, godiste, dnevnica, sati, smena);
     }
 
-
+// git vezba
 }
