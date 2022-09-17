@@ -1,3 +1,5 @@
+package domaci;
+
 import java.util.Scanner;
 //imam dve alternativnu verziju ispod i pitanje
 public class Domaci3 {

@@ -1,6 +1,5 @@
-package com.itbootcamp.bgqa.domaci19;
+package domaci19;
 
-import com.itbootcamp.bgqa.domaci17.Zaposleni;
 
 import java.util.ArrayList;
 import java.util.Collections;

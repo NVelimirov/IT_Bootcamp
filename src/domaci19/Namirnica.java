@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci19;
+package domaci19;
 
 public class Namirnica{
     private String naziv;

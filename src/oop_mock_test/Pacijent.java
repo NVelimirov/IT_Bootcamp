@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.oop_mock_test;
+package oop_mock_test;
 
 public class Pacijent {
     private String ime;

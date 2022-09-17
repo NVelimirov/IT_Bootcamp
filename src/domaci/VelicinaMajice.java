@@ -1,3 +1,5 @@
+package domaci;
+
 import java.util.Scanner;
 
 public class VelicinaMajice {

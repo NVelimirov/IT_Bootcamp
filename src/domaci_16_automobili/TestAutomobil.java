@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_16_automobili;
+package domaci_16_automobili;
 
 public class TestAutomobil {
     public static void main(String[] args) {

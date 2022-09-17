@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_voce;
+package domaci_voce;
 
 public class Breskva extends Voce{
 

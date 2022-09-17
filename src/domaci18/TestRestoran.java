@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci18;
+package domaci18;
 
 import java.util.ArrayList;
 

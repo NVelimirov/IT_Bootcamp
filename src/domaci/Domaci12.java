@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci;
+package domaci;
 
 import org.w3c.dom.ls.LSOutput;
 

@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_16_automobili;
+package domaci_16_automobili;
 
 import java.util.ArrayList;
 

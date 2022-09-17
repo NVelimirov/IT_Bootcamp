@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_voce;
+package domaci_voce;
 
 public abstract class Voce {
     private String ime;

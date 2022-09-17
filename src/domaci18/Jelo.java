@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci18;
+package domaci18;
 
 public class Jelo {
     private String naziv;

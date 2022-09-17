@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_16_automobili;
+package domaci_16_automobili;
 
 public class BMW extends Automobil{
     public BMW(String marka, String boja, int brSasije, int godiste, int cena) {

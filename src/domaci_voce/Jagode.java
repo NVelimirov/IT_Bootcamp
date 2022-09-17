@@ -1,4 +1,4 @@
-package com.itbootcamp.bgqa.domaci_voce;
+package domaci_voce;
 // napisati metod koji povecava cenu jagoda za 20% ako im nije sezona
 // if boolean iz voca == true, onda je cena jagoda * 0.2
 public class Jagode extends Voce {
