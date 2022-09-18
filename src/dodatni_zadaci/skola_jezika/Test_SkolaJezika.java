@@ -27,14 +27,22 @@ public class Test_SkolaJezika {
         kursevi.add(new Kurs("italijanski", "napredni", polaznici3));
         kursevi.add(new Kurs("engleski", "napredni", polaznici1));
         kursevi.add(new Kurs("nemacki", "srednji", polaznici1));
+        kursevi.add(new Kurs("nemacki", "osnovni", polaznici1));
 
         SkolaJezika skolica = new SkolaJezika(kursevi);
 
-        System.out.println(skolica.najnaprednijiJezik());
+//        //najpopularniji napredni
+//        System.out.println(skolica.najnaprednijiJezik());
+//
+
+        //unapredjivanje grupe
         skolica.unaprediGrupu("engleski", "osnovni");
         System.out.println(kursevi);
-        skolica.ukloni("engleski");
-        System.out.println(kursevi);
+
+//        //trebalo bi da je dobra logika, ali ne radi
+//        System.out.println(kursevi);
+//        skolica.ukloni("engleski");
+//        System.out.println(kursevi);
 
 
 

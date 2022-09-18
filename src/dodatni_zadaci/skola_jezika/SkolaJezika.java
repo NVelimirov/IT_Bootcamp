@@ -14,14 +14,22 @@ public class SkolaJezika implements Izmene{
     @Override
     public SkolaJezika najnaprednijiJezik() {
         int maxPolaznici = Integer.MIN_VALUE;
-        String jezikSaNajvisePolaznika = null;
+        ArrayList<Kurs> listaNajpopularnijih = new ArrayList<>();
         for (Kurs jezici : listaKurseva){
             if (jezici.getNivo().equalsIgnoreCase("napredni")){
                 maxPolaznici = jezici.getPolaznici().size();
-                jezikSaNajvisePolaznika = jezici.getJezik();
+                listaNajpopularnijih.add(jezici);
             }
         }
-        SkolaJezika najpopularnijiJezik = new SkolaJezika(listaKurseva);
+        ArrayList<Kurs> najpopularnijiNapredni = new ArrayList<>();
+        int brojac = 0;
+        for (Kurs najpopularniji : listaNajpopularnijih){
+            brojac++;
+            if (brojac == listaNajpopularnijih.size()){
+                najpopularnijiNapredni.add(najpopularniji);
+            }
+        }
+        SkolaJezika najpopularnijiJezik = new SkolaJezika(najpopularnijiNapredni);
 
         return najpopularnijiJezik;
     }
@@ -30,11 +38,16 @@ public class SkolaJezika implements Izmene{
     //Ukoliko nakon povecanja postoje dva kursa za isti jezik i nivo, potrebno je ispisati poruku da je potrebno spojiti te dve grupe.
     @Override
     public void unaprediGrupu(String jezik, String nivo) {
-        for (Kurs jezici : listaKurseva){
-            if (jezici.getJezik().equalsIgnoreCase(jezik)){
-                if (jezici.getNivo().equalsIgnoreCase("srednji")){
+        for (Kurs jezici : listaKurseva) {
+            if (jezici.getJezik().equalsIgnoreCase(jezik)) {
+                if (jezici.getNivo().equalsIgnoreCase("srednji")) {
                     jezici.setNivo("napredni");
-                } else if (jezici.getNivo().equalsIgnoreCase("osnovni")){
+                }
+            }
+        }
+        for (Kurs jezici : listaKurseva) {
+            if (jezici.getJezik().equalsIgnoreCase(jezik)) {
+                if (jezici.getNivo().equalsIgnoreCase("osnovni")) {
                     jezici.setNivo("srednji");
                 }
             }
@@ -44,7 +57,16 @@ public class SkolaJezika implements Izmene{
     @Override
     public void ukloni(String jezik) {
         for (Kurs jezici : listaKurseva){
-            listaKurseva.remove(jezik);
+            if (jezici.getJezik().equalsIgnoreCase(jezik)){
+                listaKurseva.remove(jezici);
+            }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "SkolaJezika{" +
+                "listaKurseva=" + listaKurseva +
+                '}' + "\n";
     }
 }
