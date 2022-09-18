@@ -14,6 +14,12 @@ public class TestRadnik {
         radnici.add(new Masinovodja(6, "f",175,1));
         Radnik r1 = new Fizikalac(8, "h",175,1);
 
+        System.out.println(radnici);
+        for (Radnik i : radnici){
+            i.povisica();
+        }
+        System.out.println("Radnici nakon povisice: " + radnici);
+
         Gradjevina gradjevina = new Gradjevina(radnici);
         //izbacuje excption, ali je logika na mestu
 //        gradjevina.dajOtkaPrvikalcaojSmeniFizikalca();
