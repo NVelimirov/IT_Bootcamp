@@ -26,5 +26,10 @@ public class TestRadnik {
         System.out.println(gradjevina.ukupnaPlataRadnikaDrugeSmene());
         //radi
         System.out.println(gradjevina.dobroPlaceni(150));
+
+        //radi sortiranje
+        System.out.println(radnici);
+        gradjevina.sortirajPoPlati();
+        System.out.println(radnici);
     }
 }

@@ -11,4 +11,6 @@ public interface Posao {
 
     public ArrayList<Radnik> dobroPlaceni(double suma);
 
+    public void sortirajPoPlati();
+
 }

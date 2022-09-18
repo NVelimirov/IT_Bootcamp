@@ -1,6 +1,6 @@
 package dodatni_zadaci.gradjevina;
 
-public abstract class Radnik {
+public abstract class Radnik implements Comparable<Radnik>{
     private int id;
     private String ime;
     private double plata;
@@ -47,5 +47,10 @@ public abstract class Radnik {
                 ", plata=" + plata +
                 ", smena=" + smena +
                 '}' + "\n";
+    }
+
+    @Override
+    public int compareTo(Radnik drugiRadnik) {
+        return Integer.compare(drugiRadnik.getId(), this.id);
     }
 }
