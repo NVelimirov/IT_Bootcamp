@@ -18,27 +18,30 @@ public class Galerija {
         this.umetnici = umetnici;
     }
 
-//    public String umetnikSaNajstarijimDelom (ArrayList<UmetnickoDelo> dela) {
-//        int max = Integer.MIN_VALUE;
-//        String umetnikSaNajstarijimDelom = null;
-//        for (UmetnickoDelo delo : dela) {
-//            if (delo.getCena() > max) {
-//                max = (int) delo.getCena();
-//                for (Umetnik umetnik : umetnici){
-//                    if (umetnik.getUmetnikovaDela() == max)
-//                }
-//            }
-//        }
-//        return
-//    }
+//metod koji vraca umetnika sa najstarijim delom
+    public  Umetnik umetnikSaNajstarijimDelom(){
+        int min = Integer.MAX_VALUE; //min jer trazimo najstarije, a starije je manji broj od mladjeg
+        Umetnik saNajstarijimDelom = null;
+        for (Umetnik i : umetnici){
+            for (UmetnickoDelo delo : i.getUmetnikovaDela()){
+                if (delo.getGodinaNastanka() < min){
+                    min = delo.getGodinaNastanka();
+                    saNajstarijimDelom = i;
+                }
+            }
+        }
+        System.out.println("Najstarije delo je naslikano " + min + ". godine");
+        return saNajstarijimDelom;
+    }
+
 
     //metod koji izracunava i ispisuje prosecnu vrednost dela svih umetnika,
     public int  prosecnaVrednostDela(){
         for (Umetnik umentici : umetnici){
 
-        }
-        return prosecnaVrednostDela();
-    }
+            }
+            return prosecnaVrednostDela();
+     }
 
     //sortiraj umetnike po vrednosti (od najmanjeg ka najvecem);
     public void sortiraj() {
