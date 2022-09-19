@@ -33,15 +33,16 @@ public class TestGalerija {
 //        System.out.println(u1.izlozi(new UmetnickoDelo("dodata slika", 2022, 556)));
 //        System.out.println(u1.toString());
 //        //radi
-//        System.out.println(listaUmetnika.get(0).vrednost());
-//        System.out.println(listaUmetnika.get(3).vrednost());
+//        for (Umetnik i : listaUmetnika){
+//            System.out.println(i.vrednost());
+//        }
 
         Galerija galerija = new Galerija(listaUmetnika);
         //sortiranje radi
-//        System.out.println(galerija);
-//        galerija.sortiraj();
-//        System.out.println(galerija);
+        System.out.println(galerija);
+        galerija.sortiraj();
+        System.out.println(galerija);
 
-        System.out.println(galerija.umetnikSaNajstarijimDelom());
+//        System.out.println(galerija.umetnikSaNajstarijimDelom());
     }
 }

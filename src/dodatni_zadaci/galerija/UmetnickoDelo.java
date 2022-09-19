@@ -1,6 +1,6 @@
 package dodatni_zadaci.galerija;
 
-public class UmetnickoDelo implements Comparable<UmetnickoDelo>{
+public class UmetnickoDelo{
     private String naziv;
     private int godinaNastanka;
     private double cena;//u evrima
@@ -36,8 +36,8 @@ public class UmetnickoDelo implements Comparable<UmetnickoDelo>{
                 '}' + "\n";
     }
 
-    @Override
-    public int compareTo(UmetnickoDelo drugoUmetnickoDelo) {
-        return Double.compare(drugoUmetnickoDelo.getCena(), this.getCena());
-    }
+//    @Override
+//    public int compareTo(UmetnickoDelo drugoUmetnickoDelo) {
+//        return Double.compare(drugoUmetnickoDelo.getCena(), this.getCena());
+//    }
 }
